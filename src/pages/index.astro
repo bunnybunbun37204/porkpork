@@ -1,141 +1,16 @@
 ---
-import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
-import pork1 from "../../src/assets/pork1.png";
-import pork2 from "../../src/assets/pork2.png";
+import Navbar from "../components/Navbar.astro";
+import About from "../components/Name.astro";
+import Education from "../components/Education.astro";
+import Experience from "../components/Experience.astro";
 ---
 
 <Layout title="Preawa | Portfolio Website">
   <main class="ml-10 mr-10">
-    <section>
-      <div class="mt-10">
-        <div class="flex flex-row justify-between">
-          <div class="text-xl font-normal">
-            <a onclick="toEdu()" class="cursor-pointer">EDUCATION</a>
-          </div>
-          <div class="flex flex-col">
-            <div class="text-6xl font-normal">
-              <a onclick="toAbout()" class="cursor-pointer">ABOUT</a>
-            </div>
-            <div class="text-6xl font-normal">
-              <a onclick="toExp()" class="cursor-pointer"> EXPERIENCEs </a>
-            </div>
-            <div class="text-6xl font-normal">
-              <a onclick="" class="cursor-pointer">PROJECTs</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="flex flex-row min-w-full mt-10 justify-between">
-      <div class="flex flex-col">
-        <div class="text-8xl font-semibold">KANYAPAT</div>
-        <div class="text-8xl font-semibold">Saetiew</div>
-      </div>
-      <div class="flex flex-row gap-10 mt-16">
-        <Image
-          width={234}
-          height={292}
-          class="object-cover mt-[145px] max-h-[292px]"
-          src={pork2}
-          alt="kanyapat-saetiew1"
-        />
-        <Image
-          width={234}
-          height={292}
-          class="object-cover max-h-[292px]"
-          src={pork1}
-          alt="kanyapat-saetiew2"
-        />
-      </div>
-    </section>
-
-    <section class="flex flex-row min-w-full mt-52 gap-96" id="edu">
-      <div class="flex flex-col">
-        <div class="text-6xl font-normal">EDUCATION</div>
-        <div class="text-3xl font-normal mt-2">THIDANUKHRO</div>
-        <div class="text-3xl font-normal">SCHOOL</div>
-        <div class="text-xl font-light">Songkhla, Thailand</div>
-        <div class="text-xl font-light">2006-2021</div>
-        <div class="flex flex-col min-w-full mt-7">
-          <div class="text-3xl font-normal">THIDANUKHRO</div>
-          <div class="text-3xl font-normal">SCHOOL</div>
-          <div class="text-xl font-light">Songkhla, Thailand</div>
-          <div class="text-xl font-light">2006-2021</div>
-        </div>
-      </div>
-
-      <div class="flex flex-col gap-28" id="about">
-        <div class="text-xl font-light">
-          Additional details about me:
-          <br />
-          Skills: Graphic design, UX design, UI design, typography, layout design,
-          color theory, Adobe Creative Suite (Photoshop, Illustrator, After Effects),
-          Sketch, Figma
-          <br />
-          Interests: Technology, art, music, travel, learning new things
-        </div>
-        <div class="flex flex-row gap-6">
-          <div class="text-xl font-medium">ABOUT</div>
-          <div class="text-xl font-light">
-            Hi, I&#039;m Praewa, a 3rd years student in the Faculty of Fine
-            Arts, majoring in Creative Exhibition at Chulalongkorn University.
-            I&#039;m passionate about graphic design and user experience (UX)
-            design, and I enjoy learning new technologies and keeping up with
-            the latest trends.
-            <br />
-            I thrive in challenging environments and am constantly seeking opportunities
-            to learn and grow. While I value a healthy work-life balance and enjoy
-            downtime to recharge, I bring exceptional focus and dedication to my
-            projects.
-            <br />
-            Now I&#039;m currently working as the Top Manager of the Integrated Brand
-            Communication department of CBA (Chulalongkorn Business Administration).
-            In this role, I had the opportunity to hone my leadership skills, collaborate
-            with team members on planning, develop CI, and create various policies.
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="flex flex-row mt-14 ml-[679px]" id="exp">
-      <div class="flex flex-col">
-        <div class="text-6xl font-normal">EXPERIENCES</div>
-        <section>
-          <div class="mt-4 text-3xl font-normal">ISD</div>
-          <div class="text-xl font-light">ui-designer</div>
-        </section>
-        <section class="mt-8">
-          <div class="text-3xl font-normal">
-            The student union faculty of science
-          </div>
-          <div class="text-xl font-light">part time ui designer</div>
-        </section>
-        <section class="mt-8">
-          <div class="text-3xl font-normal">CBA</div>
-          <div class="text-xl font-light">
-            Top Manager Integrated Brand Communication (IBC)
-          </div>
-        </section>
-      </div>
-    </section>
+    <Navbar />
+    <About />
+    <Education />
+    <Experience />
   </main>
-
-  <script is:inline>
-    function toEdu() {
-      const element = document.getElementById("edu");
-      element.scrollIntoView();
-    }
-
-    function toAbout() {
-      const element = document.getElementById("about");
-      element.scrollIntoView();
-    }
-
-    function toExp() {
-      const element = document.getElementById("exp");
-      element.scrollIntoView();
-    }
-  </script>
 </Layout>

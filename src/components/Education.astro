@@ -1,0 +1,44 @@
+---
+import { educations, skills, interest, description } from "../datas/data";
+---
+
+<section class="flex flex-row min-w-full mt-52 gap-96" id="edu">
+  <div class="flex flex-col">
+    <div class="text-6xl font-normal">EDUCATION</div>
+    {
+      educations.map((element) => (
+        <div>
+          <div class="text-3xl font-normal mt-2">
+            <Fragment set:html={element.schoolName} />
+          </div>
+          <div class="text-xl font-light">
+            <Fragment set:html={element.location} />
+          </div>
+          <div class="text-xl font-light">
+            <Fragment set:html={element.department} />
+          </div>
+          <div class="text-xl font-light">
+            <Fragment set:html={element.peroid} />
+          </div>
+          <div class="mt-5" />
+        </div>
+      ))
+    }
+  </div>
+
+  <div class="flex flex-col gap-28" id="about">
+    <div class="text-xl font-light">
+      Additional details about me:
+      <br />
+      Skills: {skills}
+      <br />
+      Interests: {interest}
+    </div>
+    <div class="flex flex-row gap-6">
+      <div class="text-xl font-medium">ABOUT</div>
+      <div class="text-xl font-light">
+        <Fragment set:html={description} />
+      </div>
+    </div>
+  </div>
+</section>

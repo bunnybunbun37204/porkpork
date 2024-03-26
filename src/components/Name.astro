@@ -1,0 +1,29 @@
+---
+import { Image } from "astro:assets";
+import pork1 from "../../src/assets/pork1.png";
+import pork2 from "../../src/assets/pork2.png";
+import { fname, lname } from "../datas/data";
+---
+
+<section class="flex flex-row min-w-full mt-10 justify-between">
+  <div class="flex flex-col">
+    <div class="text-8xl font-semibold">{fname}</div>
+    <div class="text-8xl font-semibold">{lname}</div>
+  </div>
+  <div class="flex flex-row gap-10 mt-16">
+    <Image
+      width={234}
+      height={292}
+      class="object-cover mt-[145px] max-h-[292px]"
+      src={pork2}
+      alt="kanyapat-saetiew1"
+    />
+    <Image
+      width={234}
+      height={292}
+      class="object-cover max-h-[292px]"
+      src={pork1}
+      alt="kanyapat-saetiew2"
+    />
+  </div>
+</section>
