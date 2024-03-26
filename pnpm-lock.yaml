@@ -14,6 +14,15 @@ dependencies:
   '@astrojs/tailwind':
     specifier: ^5.1.0
     version: 5.1.0(astro@4.5.9)(tailwindcss@3.4.1)
+  '@iconify-json/entypo-social':
+    specifier: ^1.1.8
+    version: 1.1.8
+  '@iconify-json/fa6-brands':
+    specifier: ^1.1.18
+    version: 1.1.18
+  '@iconify-json/mi':
+    specifier: ^1.1.8
+    version: 1.1.8
   astro:
     specifier: ^4.5.9
     version: 4.5.9(typescript@5.4.3)
@@ -1190,6 +1199,24 @@ packages:
 
   /@iarna/toml@2.2.5:
     resolution: {integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==}
+    dev: false
+
+  /@iconify-json/entypo-social@1.1.8:
+    resolution: {integrity: sha512-ALKC1pD/ADRlN4S1HcQpG/NyoVHJKNHOmcvnaFKmnQg0qP9TtCJ+tSBK3cQIoXG5xVm5D50kKAyJdxDQJD1SEw==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: false
+
+  /@iconify-json/fa6-brands@1.1.18:
+    resolution: {integrity: sha512-vmeJP06Xbj0XbVGiBHg0q8H3M894d4bGXKCmiHt6JqUdpiGcIV7r96N+BOU4ZS1+hvpV57fTfXlFPiUfxAIfkg==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: false
+
+  /@iconify-json/mi@1.1.8:
+    resolution: {integrity: sha512-DGoHbf4nkyrHNOAbbNncK1hiiYo/hk/IpdEGZ+eZJpOfWV2VypeaTaQt69pldDgQU+QDyc/GgmO4c0yIwQRfnQ==}
+    dependencies:
+      '@iconify/types': 2.0.0
     dev: false
 
   /@iconify/tools@3.0.7:
