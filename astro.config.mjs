@@ -6,7 +6,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  output: "static",
+  output: "hybrid",
   icon:"",
   adapter: cloudflare({
     runtime: {
