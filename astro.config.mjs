@@ -1,4 +1,4 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 import cloudflare from "@astrojs/cloudflare";
 import icon from "astro-icon";
 
@@ -9,8 +9,8 @@ export default defineConfig({
   output: "server",
   adapter: cloudflare({
     runtime: {
-      mode: "local"
-    }
+      mode: "local",
+    },
   }),
-  integrations: [tailwind(), icon()]
+  integrations: [tailwind(), icon()],
 });
