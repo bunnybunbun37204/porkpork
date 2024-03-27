@@ -7,6 +7,8 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   output: "server",
+  site: 'https://bunnybunbun37204.github.io',
+  base: 'porkpork',
   adapter: cloudflare({
     runtime: {
       mode: "local",
