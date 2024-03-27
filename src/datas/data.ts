@@ -34,5 +34,3 @@ Now I&#039;m currently working as the Top Manager of the Integrated Brand
 Communication department of CBA (Chulalongkorn Business Administration).
 In this role, I had the opportunity to hone my leadership skills, collaborate
 with team members on planning, develop CI, and create various policies.`;
-
-export const server = true;
