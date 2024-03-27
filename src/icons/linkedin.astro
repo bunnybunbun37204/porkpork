@@ -1,0 +1,12 @@
+---
+import { Icon } from 'astro-icon/components';
+
+interface Props {
+  height: number;
+  width: number;
+}
+
+const { height, width } = Astro.props;
+---
+
+<Icon name="il:linkedin" width={width} height={height} />

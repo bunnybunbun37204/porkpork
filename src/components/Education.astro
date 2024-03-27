@@ -1,6 +1,6 @@
 ---
 import { educations, skills, interest, description } from "../datas/data";
-import Icons from "../icons/icons.astro";
+import IconGroup from "./IconGroup.astro";
 ---
 
 <section class="flex flex-row min-w-full mt-52 gap-96" id="edu">
@@ -9,38 +9,31 @@ import Icons from "../icons/icons.astro";
     {
       educations.map((element) => (
         <div>
-          <div class="text-3xl font-normal mt-2">
+          <h2 class="font-normal mt-2">
             <Fragment set:html={element.schoolName} />
-          </div>
-          <div class="text-xl font-light">
+          </>
+          <h4 class="font-light">
             <Fragment set:html={element.location} />
-          </div>
-          <div class="text-xl font-light">
+          </h4>
+          <h4 class="font-light">
             <Fragment set:html={element.department} />
-          </div>
-          <div class="text-xl font-light">
+          </h4>
+          <h4 class="font-light">
             <Fragment set:html={element.peroid} />
-          </div>
+          </h4>
           <div class="mt-5" />
         </div>
       ))
     }
-    <Icons/>
+    <IconGroup/>
   </div>
 
   <div class="flex flex-col gap-28" id="about">
-    <div class="text-xl font-light">
-      Additional details about me:
-      <br />
-      Skills: {skills}
-      <br />
-      Interests: {interest}
-    </div>
     <div class="flex flex-row gap-6">
-      <div class="text-xl font-medium">ABOUT</div>
-      <div class="text-xl font-light">
+      <h4 class="font-medium">ABOUT:</h4>
+      <p class="font-light">
         <Fragment set:html={description} />
-      </div>
+      </p>
     </div>
   </div>
 </section>

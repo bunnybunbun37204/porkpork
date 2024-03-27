@@ -14,12 +14,15 @@ dependencies:
   '@astrojs/tailwind':
     specifier: ^5.1.0
     version: 5.1.0(astro@4.5.9)(tailwindcss@3.4.1)
-  '@iconify-json/entypo-social':
-    specifier: ^1.1.8
-    version: 1.1.8
+  '@fontsource/inter':
+    specifier: ^5.0.17
+    version: 5.0.17
   '@iconify-json/fa6-brands':
     specifier: ^1.1.18
     version: 1.1.18
+  '@iconify-json/il':
+    specifier: ^1.1.8
+    version: 1.1.8
   '@iconify-json/mi':
     specifier: ^1.1.8
     version: 1.1.8
@@ -1197,18 +1200,22 @@ packages:
     resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
     engines: {node: '>=14'}
 
+  /@fontsource/inter@5.0.17:
+    resolution: {integrity: sha512-2meBGx1kt7u5LwzGc5Sz5rka6ZDrydg6nT3x6Wkt310vHXUchIywrO8pooWMzZdHYcyFY/cv4lEpJZgMD94bCg==}
+    dev: false
+
   /@iarna/toml@2.2.5:
     resolution: {integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==}
     dev: false
 
-  /@iconify-json/entypo-social@1.1.8:
-    resolution: {integrity: sha512-ALKC1pD/ADRlN4S1HcQpG/NyoVHJKNHOmcvnaFKmnQg0qP9TtCJ+tSBK3cQIoXG5xVm5D50kKAyJdxDQJD1SEw==}
+  /@iconify-json/fa6-brands@1.1.18:
+    resolution: {integrity: sha512-vmeJP06Xbj0XbVGiBHg0q8H3M894d4bGXKCmiHt6JqUdpiGcIV7r96N+BOU4ZS1+hvpV57fTfXlFPiUfxAIfkg==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: false
 
-  /@iconify-json/fa6-brands@1.1.18:
-    resolution: {integrity: sha512-vmeJP06Xbj0XbVGiBHg0q8H3M894d4bGXKCmiHt6JqUdpiGcIV7r96N+BOU4ZS1+hvpV57fTfXlFPiUfxAIfkg==}
+  /@iconify-json/il@1.1.8:
+    resolution: {integrity: sha512-oN/CM+0jA/4HeSkerS0Y+4CGmcS4NcrljarqcfCcIirpEZPnz6xejgI73wzcbaqwUo1lJnLD2Ni6oCrObDYD5g==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: false

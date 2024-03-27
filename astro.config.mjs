@@ -11,6 +11,8 @@ export default defineConfig({
     runtime: {
       mode: "local",
     },
+    imageService: 'passthrough'
+
   }),
   integrations: [tailwind(), icon()],
 });

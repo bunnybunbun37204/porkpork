@@ -1,0 +1,12 @@
+---
+import { Icon } from 'astro-icon/components';
+
+interface Props {
+  height: number;
+  width: number;
+}
+
+const { height, width } = Astro.props;
+---
+
+<Icon name="fa6-brands:square-instagram" width={width} height={height} />
