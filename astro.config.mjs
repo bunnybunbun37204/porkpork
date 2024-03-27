@@ -8,7 +8,7 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   output: "server",
   site: 'https://bunnybunbun37204.github.io',
-  base: 'porkpork',
+  base: '/porkpork',
   adapter: cloudflare({
     runtime: {
       mode: "local",
