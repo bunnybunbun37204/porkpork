@@ -1,0 +1,58 @@
+---
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="portfolio website for kanyapat saetiew the 3rd years student of FAA chula (exhibitions design) build with astrojs, tailwindcss"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/porkpork.jpg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body
+    class="min-w-full bg-white bg-[linear-gradient(to_right,#F49494_1px,transparent_1px),linear-gradient(to_bottom,#F49494_1px,transparent_1px)] bg-[size:300px_300px]"
+  >
+    <slot />
+  </body>
+
+  <style is:global>
+    body {
+      background-color: "#E3E3DE";
+    }
+    h1 {
+      font-size: 100px;
+      line-height: normal;
+    }
+    h2 {
+      font-size: 48px;
+      line-height: normal;
+    }
+    h3 {
+      font-size: 32px;
+      line-height: normal;
+    }
+    h4 {
+      font-size: 24px;
+      line-height: normal;
+    }
+    h5 {
+      font-size: 16px;
+      line-height: normal;
+    }
+    p {
+      font-size: 14px;
+      line-height: normal;
+    }
+  </style>
+</html>
