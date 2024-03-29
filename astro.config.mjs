@@ -1,4 +1,4 @@
-import { defineConfig, passthroughImageService } from "astro/config";
+import { defineConfig, sharpImageService } from "astro/config";
 import icon from "astro-icon";
 
 import tailwind from "@astrojs/tailwind";
@@ -8,6 +8,6 @@ export default defineConfig({
   output: "static",
   integrations: [tailwind(), icon()],
   image: {
-    service: passthroughImageService(),
+    service: sharpImageService(),
   },
 });
