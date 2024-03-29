@@ -3,6 +3,7 @@
 interface Props {
   title: string;
 }
+import { SEO } from "astro-seo";
 
 const { title } = Astro.props;
 ---
@@ -10,6 +11,10 @@ const { title } = Astro.props;
 <!doctype html>
 <html lang="en">
   <head>
+    <SEO
+    title="Prewa | Kanyapat's website"
+    description="Kanyapat saetiew portfolio website as a UX/UI designer"
+  />
     <meta charset="UTF-8" />
     <meta
       name="description"
