@@ -1,20 +1,23 @@
 ---
-import { Icon } from "astro-icon/components";
 import Instragram from "../icons/instragram.astro";
 import Linkedin from "../icons/linkedin.astro";
 import Email from "../icons/email.astro";
 ---
 
 <div class="flex flex-row gap-4">
-  <a href="https://www.instagram.com/idontlikegradient/">
-    <Instragram width={36} height={41}/>
+  <a
+    href="https://www.instagram.com/idontlikegradient/"
+    aria-label="click this link to go to instragram"
+  >
+    <Instragram width={36} height={41} />
   </a>
   <a
     href="https://www.linkedin.com/in/kanyapat-sae-tiew-4a84a02b9/?originalSubdomain=th"
+    aria-label="click this link to go to linked in"
   >
-    <Linkedin width={36} height={41}/>
+    <Linkedin width={36} height={41} />
   </a>
-  <a href="/not-me">
-    <Email width={36} height={41}/>
+  <a href="/" aria-label="click this link to go to root">
+    <Email width={36} height={41} />
   </a>
 </div>
