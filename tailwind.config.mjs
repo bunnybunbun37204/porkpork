@@ -7,7 +7,7 @@ export default {
     extend: {
       colors: {
         grey01: "#E3E3DE",
-		yellow01: "#F8E894"
+        yellow01: "#F8E894",
       },
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],

@@ -2,29 +2,38 @@
 import { Image } from "astro:assets";
 import pork1 from "../../src/assets/pork1.png";
 import pork2 from "../../src/assets/pork2.png";
-import { fname, lname } from "../datas/data";
+import { fname, lname, skills } from "../datas/data";
 ---
 
-<section class="flex flex-row min-w-full mt-10 justify-between">
+<section class="flex flex-row min-w-full mt-[107px] gap-[73px]">
   <div class="flex flex-col">
     <h1 class="font-semibold">{fname}</h1>
     <h1 class="font-semibold">{lname}</h1>
   </div>
-  <div class="flex flex-row gap-10 mt-16">
+  <div class="flex flex-row gap-6 mt-16">
     <Image
-      width={234}
-      height={292}
-      class="object-cover mt-[145px] max-h-[292px] cursor-pointer"
-      src={pork2}
-      alt="kanyapat-saetiew1"
-      onclick=""
-    />
-    <Image
-      width={234}
-      height={292}
-      class="object-cover max-h-[292px]"
+      width={204}
+      height={248}
+      class="object-none max-h-[248px] mt-[145px]"
       src={pork1}
       alt="kanyapat-saetiew2"
     />
+    <div class="grid grid-rows-none">
+      <h4 class="text-end font-medium">Skills</h4>
+      <Image
+        width={205}
+        height={256}
+        class="object-none max-h-[256px]"
+        src={pork2}
+        alt="kanyapat-saetiew1"
+      />
+    </div>
+    <div class="flex flex-col">
+      {
+        skills.map((element) => (
+          <li class="text-xl font-light">{element}</li>
+        ))
+      }
+    </div>
   </div>
 </section>
