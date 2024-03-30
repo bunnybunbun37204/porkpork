@@ -1,5 +1,4 @@
 ---
-
 interface Props {
   title: string;
 }
@@ -11,10 +10,6 @@ const { title } = Astro.props;
 <!doctype html>
 <html lang="en">
   <head>
-    <SEO
-    title="Preawa | Kanyapat's website"
-    description="Kanyapat saetiew portfolio website as a UX/UI designer"
-  />
     <meta charset="UTF-8" />
     <meta
       name="description"
@@ -25,9 +20,7 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body
-    class="min-w-full bg-white"
-  >
+  <body class="min-w-full bg-white">
     <slot />
   </body>
 
