@@ -1,0 +1,38 @@
+---
+import { Image } from "astro:assets";
+interface Props {
+  project_number: string;
+  project_name: string;
+  project_department: string;
+  project_year: string;
+  image: ImageMetadata;
+}
+
+const {
+  project_number,
+  project_name,
+  project_department,
+  project_year,
+  image,
+} = Astro.props;
+---
+
+<div class="flex flex-col gap-9">
+  <div class="flex flex-row gap-4">
+    <h2 class="font-normal text-start">{project_number}</h2>
+    <div class="flex flex-col">
+      <h2>{project_name}</h2>
+      <h2>{project_department}</h2>
+      <h2>{project_year}</h2>
+    </div>
+  </div>
+  <div class="flex justify-center">
+    <Image
+      alt="Preawa portfolio"
+      src={image}
+      width={411}
+      height={253}
+      class="object-cover cursor-pointer shadow-lg hover:transform-gpu hover:scale-110"
+    />
+  </div>
+</div>

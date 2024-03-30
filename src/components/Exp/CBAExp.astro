@@ -2,26 +2,47 @@
 import { Image } from "astro:assets";
 import CBA1 from "../../assets/CBA1.png";
 import CBA2 from "../../assets/CBA2.png";
+import CBA3 from "../../assets/CBA3.png";
+import CBA4 from "../../assets/CBA4.png";
 ---
 
 <div class="flex flex-col gap-7">
   <div class="flex flex-col gap-1">
     <div class="text-6xl font-normal">CBA</div>
     <div class="text-xl font-normal">Chulalongkorn Business Adminstration</div>
-    <p class="font-light">Top Manager Integrated Brand Communication department (IBC)</p>
+    <p class="font-light">
+      Top Manager Integrated Brand Communication department (IBC)
+    </p>
   </div>
-  <Image
-    alt="CBA instragram image project"
-    src={CBA1}
-    width={262}
-    height={526}
-    class="object-cover cursor-pointer shadow-lg hover:transform-gpu hover:scale-110"
-  />
-  <Image
-    alt="CBA TikTok image project"
-    src={CBA2}
-    width={262}
-    height={526}
-    class="object-cover cursor-pointer shadow-lg hover:transform-gpu hover:scale-110"
-  />
+  <div class="grid grid-cols-2 gap-9">
+    <Image
+      alt="CBA instragram image project"
+      src={CBA1}
+      width={262}
+      height={526}
+      class="object-cover cursor-pointer shadow-lg hover:transform-gpu hover:scale-110"
+    />
+    <Image
+      alt="CBA instragram image project"
+      src={CBA3}
+      width={258}
+      height={519}
+      class="object-cover cursor-pointer shadow-lg hover:transform-gpu hover:scale-110"
+    />
+    <Image
+      alt="CBA TikTok image project"
+      src={CBA2}
+      width={267}
+      height={568}
+      class="object-cover cursor-pointer shadow-lg hover:transform-gpu hover:scale-110"
+    />
+
+    <Image
+      alt="CBA Facebook image project"
+      src={CBA4}
+      width={261}
+      height={568}
+      class="object-cover cursor-pointer shadow-lg hover:transform-gpu hover:scale-110"
+    />
+  </div>
 </div>

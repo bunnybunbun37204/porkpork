@@ -1,0 +1,53 @@
+---
+import Layout from "../layouts/Layout.astro";
+import locker from "../assets/uxui/locker.png";
+import pussadu from "../assets/uxui/pussadu.png";
+import sgcu from "../assets/uxui/sgcu.png";
+
+import Port from "../components/Port.astro";
+import WorkLayout from "../layouts/WorkLayout.astro";
+---
+
+<WorkLayout title="UX&UI | Kanyapat's Portfolio" name="UXUI">
+  <div class="grid grid-cols-2 gap-20 ml-10">
+    <Port
+      project_number="01"
+      project_name="LOCKER"
+      project_department="SCI PROJECT"
+      project_year="2024"
+      image={locker}
+    />
+
+    <Port
+      project_number="02"
+      project_name="PUSSADU"
+      project_department="SCI PROJECT"
+      project_year="2024"
+      image={pussadu}
+    />
+
+    <Port
+      project_number="03"
+      project_name="SGCU"
+      project_department="ISD PROJECT"
+      project_year="2024"
+      image={sgcu}
+    />
+
+    <Port
+      project_number="04"
+      project_name="MUMU APP"
+      project_department="IN CLASS"
+      project_year="2024"
+      image={sgcu}
+    />
+
+    <Port
+      project_number="05"
+      project_name="OTOP WEB"
+      project_department="IN CLASS"
+      project_year="2024"
+      image={sgcu}
+    />
+  </div>
+</WorkLayout>
