@@ -29,9 +29,6 @@ dependencies:
   astro-icon:
     specifier: ^1.1.0
     version: 1.1.0
-  astro-seo:
-    specifier: ^0.8.3
-    version: 0.8.3(typescript@5.4.3)
   sharp:
     specifier: ^0.33.3
     version: 0.33.3
@@ -1876,16 +1873,6 @@ packages:
       '@iconify/utils': 2.1.22
     transitivePeerDependencies:
       - supports-color
-    dev: false
-
-  /astro-seo@0.8.3(typescript@5.4.3):
-    resolution: {integrity: sha512-gQeEh0U2yyVM0iyU8DTORK6hXMy5WH2wufrkUuNOKjI3LnYLniqgDxm1LZPQDuD6b4OHabVOi/5L88A9POCcCQ==}
-    dependencies:
-      '@astrojs/check': 0.5.10(typescript@5.4.3)
-    transitivePeerDependencies:
-      - prettier
-      - prettier-plugin-astro
-      - typescript
     dev: false
 
   /astro@4.5.12(typescript@5.4.3):
