@@ -1,6 +1,8 @@
 ---
 import { description, interest } from "../datas/data";
+import Hamburger from "../icons/Hamburger.astro";
 ---
+
 <div class="mt-10 mr-10">
   <div class="flex flex-row min-w-full justify-between">
     <div class="max-w-[449px]">
@@ -12,14 +14,12 @@ import { description, interest } from "../datas/data";
       <p class="font-normal text-[20px]">Interests</p>
       <p class="font-light text-[20px]">{interest}</p>
     </div>
-    <div class="flex flex-col text-end md:hidden"> <!-- Hide on medium screens and above -->
-      <button class="hamburger-menu focus:outline-none" onclick="toggleMenu()">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-        </svg>
-      </button>
+    <div class="flex flex-col text-end md:hidden">
+      <!-- Hide on medium screens and above -->
+      <Hamburger width={38} height={38}/>
     </div>
-    <div class="hidden md:flex flex-col text-end"> <!-- Show on medium screens and above -->
+    <div class="hidden md:flex flex-col text-end">
+      <!-- Show on medium screens and above -->
       <hr class="w-52 h-[6px] mx-auto my-3 bg-yellow01 border-0" />
       <h3 class="font-normal">
         <a onclick="toEdu()" class="cursor-pointer">EDUCATION</a>
@@ -36,6 +36,18 @@ import { description, interest } from "../datas/data";
     </div>
   </div>
 </div>
+
+<style>
+  .hamburger-menu {
+    /* Styles for the hamburger menu button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    cursor: pointer;
+    /* Add more styles as needed */
+  }
+</style>
 
 <script is:inline>
   function toEdu() {
@@ -54,8 +66,7 @@ import { description, interest } from "../datas/data";
   }
 
   function toggleMenu() {
-    const menu = document.querySelector('.hidden.md\\:flex');
-    menu.classList.toggle('flex');
+    const menu = document.querySelector(".hidden.md\\:flex");
+    menu.classList.toggle("flex");
   }
 </script>
-

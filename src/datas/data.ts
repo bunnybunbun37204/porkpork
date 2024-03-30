@@ -23,7 +23,7 @@ export const skills = [
   'typography',
   'layout design',
   'color theory',
-  'Adobe creative suites (Ps, Ai, Ae',
+  'Adobe creative suites (Ps, Ai, Ae)',
   'Sketch',
   'Figma'
 ];
