@@ -1,7 +1,6 @@
 ---
 import { description, interest } from "../datas/data";
 ---
-
 <div class="mt-10 mr-10">
   <div class="flex flex-row min-w-full justify-between">
     <div class="max-w-[449px]">
@@ -13,19 +12,26 @@ import { description, interest } from "../datas/data";
       <p class="font-normal text-[20px]">Interests</p>
       <p class="font-light text-[20px]">{interest}</p>
     </div>
-    <div class="flex flex-col text-end">
+    <div class="flex flex-col text-end md:hidden"> <!-- Hide on medium screens and above -->
+      <button class="hamburger-menu focus:outline-none" onclick="toggleMenu()">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="hidden md:flex flex-col text-end"> <!-- Show on medium screens and above -->
       <hr class="w-52 h-[6px] mx-auto my-3 bg-yellow01 border-0" />
       <h3 class="font-normal">
-        <a onclick="javascript:toEdu()" class="cursor-pointer">EDUCATION</a>
+        <a onclick="toEdu()" class="cursor-pointer">EDUCATION</a>
       </h3>
       <h3 class="font-normal">
-        <a onclick="javascript:toExp()" class="cursor-pointer">CONTACT</a>
+        <a onclick="toExp()" class="cursor-pointer">CONTACT</a>
       </h3>
       <h3 class="font-normal">
-        <a onclick="javascript:toExp()" class="cursor-pointer">EXPERIENCES</a>
+        <a onclick="toExp()" class="cursor-pointer">EXPERIENCES</a>
       </h3>
       <h3 class="font-normal">
-        <a onclick="javascript:toExp()" class="cursor-pointer">WORKS</a>
+        <a onclick="toExp()" class="cursor-pointer">WORKS</a>
       </h3>
     </div>
   </div>
@@ -46,4 +52,10 @@ import { description, interest } from "../datas/data";
     const element = document.getElementById("exp");
     element.scrollIntoView();
   }
+
+  function toggleMenu() {
+    const menu = document.querySelector('.hidden.md\\:flex');
+    menu.classList.toggle('flex');
+  }
 </script>
+
