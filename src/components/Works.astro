@@ -1,3 +1,8 @@
+<style>
+  #fixedDiv {
+    transition: all 0.3s ease;
+  }
+</style>
 <div id="fixedDiv" class="flex flex-col gap-16 min-w-72">
   <div class="font-normal text-6xl text-end mr-10">WORKS</div>
   <div class="items-end flex flex-col gap-4 justify-end">
@@ -21,17 +26,12 @@
 
 <script is:inline>
   window.addEventListener("scroll", function () {
-    var element = document.getElementById("fixedDiv");
-    if (window.scrollY > 1342) {
-      element.classList.remove("flex");
-      element.classList.add("fixed");
-      element.classList.add(`bottom-0`);
-      element.classList.add("right-0");
-    } else {
-      element.classList.remove("fixed");
-      element.classList.remove("bottom-0");
-      element.classList.remove("right-0");
-      element.classList.add("flex");
-    }
+    const element = document.getElementById("fixedDiv");
+    const shouldFix = window.scrollY > 1200;
+
+    element.classList.toggle("fixed", shouldFix);
+    element.classList.toggle("bottom-0", shouldFix);
+    element.classList.toggle("right-0", shouldFix);
+    element.classList.toggle("flex", !shouldFix);
   });
 </script>
