@@ -1,30 +1,28 @@
 ---
-import { educations, skills, interest, description } from "../datas/data";
+import { educations, interest, description } from "../datas/data";
 import IconGroup from "./IconGroup.astro";
 ---
 
-<section class="flex flex-row min-w-full mt-52 gap-96" id="edu">
-  <div class="flex flex-col">
-    <div class="text-6xl font-normal">EDUCATION</div>
-    {
-      educations.map((element) => (
-        <div>
-          <h2 class="font-normal mt-2">
-            <Fragment set:html={element.schoolName} />
-          </>
-          <h4 class="font-light">
-            <Fragment set:html={element.location} />
-          </h4>
-          <h4 class="font-light">
-            <Fragment set:html={element.department} />
-          </h4>
-          <h4 class="font-light">
-            <Fragment set:html={element.peroid} />
-          </h4>
-          <div class="mt-5" />
-        </div>
-      ))
-    }
-    <IconGroup/>
-  </div>
-</section>
+<div class="flex flex-col">
+  <div class="text-6xl font-normal">EDUCATION</div>
+  {
+    educations.map((element) => (
+      <div>
+        <h3 class="font-normal mt-2">
+          <Fragment set:html={element.schoolName} />
+        </h3>
+        <h4 class="font-light">
+          <Fragment set:html={element.location} />
+        </h4>
+        <h4 class="font-light">
+          <Fragment set:html={element.department} />
+        </h4>
+        <h4 class="font-light">
+          <Fragment set:html={element.peroid} />
+        </h4>
+        <div class="mt-5" />
+      </div>
+    ))
+  }
+  <IconGroup />
+</div>

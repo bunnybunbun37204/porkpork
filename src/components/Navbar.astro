@@ -1,37 +1,35 @@
 ---
-import { description, interest, skills } from "../datas/data";
+import { description, interest } from "../datas/data";
 ---
 
-<section>
-  <div class="mt-10">
-    <div class="flex flex-row min-w-full justify-between">
-      <div class="max-w-[449px]">
-        <hr class="w-auto h-[6px] mx-auto my-3 bg-yellow01 border-0" />
-        <p class="font-light text-[20px]">{description}</p>
-      </div>
-      <div class="max-w-[257px]">
-        <hr class="w-auto h-[6px] mx-auto my-3 bg-yellow01 border-0" />
-        <p class="font-normal text-[20px]">Interests</p>
-        <p class="font-light text-[20px]">{interest}</p>
-      </div>
-      <div class="flex flex-col text-end">
-        <hr class="w-52 h-[6px] mx-auto my-3 bg-yellow01 border-0" />
-        <h3 class="font-normal">
-          <a onclick="javascript:toEdu()" class="cursor-pointer">EDUCATION</a>
-        </h3>
-        <h3 class="font-normal">
-          <a onclick="javascript:toExp()" class="cursor-pointer">CONTACT</a>
-        </h3>
-        <h3 class="font-normal">
-          <a onclick="javascript:toExp()" class="cursor-pointer">EXPERIENCES</a>
-        </h3>
-        <h3 class="font-normal">
-          <a onclick="javascript:toExp()" class="cursor-pointer">WORKS</a>
-        </h3>
-      </div>
+<div class="mt-10 mr-10">
+  <div class="flex flex-row min-w-full justify-between">
+    <div class="max-w-[449px]">
+      <hr class="w-auto h-[6px] mx-auto my-3 bg-yellow01 border-0" />
+      <p class="font-light text-[20px]">{description}</p>
+    </div>
+    <div class="max-w-[257px]">
+      <hr class="w-auto h-[6px] mx-auto my-3 bg-yellow01 border-0" />
+      <p class="font-normal text-[20px]">Interests</p>
+      <p class="font-light text-[20px]">{interest}</p>
+    </div>
+    <div class="flex flex-col text-end">
+      <hr class="w-52 h-[6px] mx-auto my-3 bg-yellow01 border-0" />
+      <h3 class="font-normal">
+        <a onclick="javascript:toEdu()" class="cursor-pointer">EDUCATION</a>
+      </h3>
+      <h3 class="font-normal">
+        <a onclick="javascript:toExp()" class="cursor-pointer">CONTACT</a>
+      </h3>
+      <h3 class="font-normal">
+        <a onclick="javascript:toExp()" class="cursor-pointer">EXPERIENCES</a>
+      </h3>
+      <h3 class="font-normal">
+        <a onclick="javascript:toExp()" class="cursor-pointer">WORKS</a>
+      </h3>
     </div>
   </div>
-</section>
+</div>
 
 <script is:inline>
   function toEdu() {
