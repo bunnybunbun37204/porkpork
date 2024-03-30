@@ -1,4 +1,4 @@
-<div class="flex flex-col gap-16 min-w-72">
+<div id="fixedDiv" class="flex flex-col gap-16 min-w-72">
   <div class="font-normal text-6xl text-end mr-10">WORKS</div>
   <div class="items-end flex flex-col gap-4 justify-end">
     <div
@@ -18,3 +18,20 @@
     </div>
   </div>
 </div>
+
+<script is:inline>
+  window.addEventListener("scroll", function () {
+    var element = document.getElementById("fixedDiv");
+    if (window.scrollY > 1342) {
+      element.classList.remove("flex");
+      element.classList.add("fixed");
+      element.classList.add(`bottom-0`);
+      element.classList.add("right-0");
+    } else {
+      element.classList.remove("fixed");
+      element.classList.remove("bottom-0");
+      element.classList.remove("right-0");
+      element.classList.add("flex");
+    }
+  });
+</script>
