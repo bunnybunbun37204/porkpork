@@ -1,0 +1,20 @@
+---
+import { Image } from "astro:assets";
+import locker from "../../assets/locker.png";
+import ISD from "../../assets/ISD.png";
+---
+
+<div class="flex flex-col gap-7">
+  <div class="flex flex-col gap-1">
+    <div class="text-6xl font-normal">ISD</div>
+    <div class="text-xl font-normal">Information System Development</div>
+    <p class="font-light">ui designer</p>
+  </div>
+  <Image
+    alt="sgcu.in.th image project"
+    src={ISD}
+    width={427}
+    height={276}
+    class="object-cover max-w-[427px] max-h-[276px] shadow-lg"
+  />
+</div>

@@ -1,0 +1,27 @@
+---
+import { Image } from "astro:assets";
+import CBA1 from "../../assets/CBA1.png";
+import CBA2 from "../../assets/CBA2.png";
+---
+
+<div class="flex flex-col gap-7">
+  <div class="flex flex-col gap-1">
+    <div class="text-6xl font-normal">CBA</div>
+    <div class="text-xl font-normal">Chulalongkorn Business Adminstration</div>
+    <p class="font-light">Top Manager Integrated Brand Communication department (IBC)</p>
+  </div>
+  <Image
+    alt="CBA instragram image project"
+    src={CBA1}
+    width={262}
+    height={526}
+    class="object-cover max-w-[262px] max-h-[526px] shadow-lg"
+  />
+  <Image
+    alt="CBA TikTok image project"
+    src={CBA2}
+    width={262}
+    height={526}
+    class="object-cover max-w-[262px] max-h-[526px] shadow-lg"
+  />
+</div>

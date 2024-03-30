@@ -1,0 +1,27 @@
+---
+import { Image } from "astro:assets";
+import locker from "../../assets/locker.png";
+import pussadu from "../../assets/pussadu.png";
+---
+
+<div class="flex flex-col gap-7">
+  <div class="flex flex-col gap-1">
+    <div class="text-6xl font-normal">SCI</div>
+    <div class="text-xl font-normal">THE STUDENT UNION FACULTY OF SCIENCE</div>
+    <p class="font-light">part time ui designer</p>
+  </div>
+  <Image
+    alt="locker image project"
+    src={locker}
+    width={427}
+    height={276}
+    class="object-cover max-w-[427px] max-h-[276px] shadow-lg"
+  />
+  <Image
+    alt="pussadu image project"
+    src={pussadu}
+    width={427}
+    height={276}
+    class="object-cover max-w-[427px] max-h-[276px] shadow-lg"
+  />
+</div>
