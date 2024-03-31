@@ -1,0 +1,85 @@
+---
+import { Image } from "astro:assets";
+import DetailLayout from "../../layouts/DetailLayout.astro";
+import design from "../../assets/uxui/sgcu/design.png";
+import design2 from "../../assets/uxui/sgcu/design2.png";
+import web1 from "../../assets/uxui/sgcu/web1.png";
+import web2 from "../../assets/uxui/sgcu/web2.png";
+import web3 from "../../assets/uxui/sgcu/web3.png";
+import web4 from "../../assets/uxui/sgcu/web4.png";
+---
+
+<DetailLayout
+  name="UXUI"
+  title="SGCU project detail | Preawa's Portfolio"
+  link="/uxui"
+>
+  <div class="flex flex-col gap-24 ml-20 mt-10">
+    <div class="flex flex-col gap-1">
+      <div class="flex flex-row gap-4">
+        <h2 class="font-normal text-start">03</h2>
+        <div class="flex flex-col">
+          <h2>SGCU</h2>
+          <h2>ISD PROJECT</h2>
+          <h2>2024</h2>
+        </div>
+      </div>
+      <div class="text-[28px] font-light max-w-[1183px] ml-12">
+        Design the official website for the Chulalongkorn University Student
+        Union.
+      </div>
+    </div>
+    <div class="flex flex-col gap-16">
+      <h2 class="font-bold">Design System</h2>
+      <div class="flex flex-col gap-11">
+        <Image
+          alt="sgcu.in.th design system"
+          src={design}
+          width={659}
+          height={259}
+          class="object-cover cursor-pointer shadow-lg"
+        />
+        <Image
+          alt="sgcu.in.th design system"
+          src={design2}
+          width={1117}
+          height={957}
+          class="object-cover cursor-pointer shadow-lg"
+        />
+      </div>
+    </div>
+    <div class="flex flex-col gap-16">
+      <h2>SGCU Website</h2>
+      <div class="inline-flex flex-col justify-center items-center gap-3">
+        <Image
+          alt="sgcu.in.th website system"
+          src={web1}
+          width={874}
+          height={594}
+          class="object-cover cursor-pointer justify-end shadow-lg"
+        />
+        <Image
+          alt="sgcu.in.th website system"
+          src={web2}
+          width={1127}
+          height={709}
+          class="object-cover cursor-pointer shadow-lg"
+        />
+        <Image
+          alt="sgcu.in.th design system"
+          src={web3}
+          width={1126}
+          height={489}
+          class="object-cover cursor-pointer shadow-lg"
+        />
+        <Image
+          alt="sgcu.in.th website system"
+          src={web4}
+          width={1129}
+          height={561}
+          class="object-cover cursor-pointer shadow-lg"
+        />
+      </div>
+    </div>
+  </div>
+</DetailLayout>

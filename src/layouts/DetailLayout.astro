@@ -1,0 +1,27 @@
+---
+import Layout from "./Layout.astro";
+interface Props {
+  title: string;
+  name: string;
+  link: string;
+}
+
+const { title, name, link } = Astro.props;
+---
+
+<Layout title={title}>
+  <div class="flex flex-col gap-7 mt-10 mb-10">
+    <div class="flex flex-row justify-between">
+      <div class="flex justify-start">
+        <a href={link}>
+          <div
+            class="bg-yellow01 w-[150px] h-[78px] inline-flex items-center gap-2.5 overflow-hidden transition-[width] duration-[0.3s] ease-[ease] px-5 py-2.5 rounded-tr-3xl rounded-br-3xl hover:w-[200px] justify-end cursor-pointer"
+          >
+            <div class="text-5xl">{name}</div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <slot />
+  </div>
+</Layout>
