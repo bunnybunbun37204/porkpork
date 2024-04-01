@@ -1,0 +1,195 @@
+---
+import { Image } from "astro:assets";
+import anan1 from "../../assets/exhi/eness/ana1.png";
+import anan2 from "../../assets/exhi/eness/ana2.png";
+import anan3 from "../../assets/exhi/eness/ana3.png";
+import anan4 from "../../assets/exhi/eness/ana4.png";
+import anan5 from "../../assets/exhi/eness/ana5.png";
+import anan6 from "../../assets/exhi/eness/ana6.png";
+
+import mood from "../../assets/exhi/eness/mood.png";
+import poster from "../../assets/exhi/eness/poster.png";
+
+import plan1 from "../../assets/exhi/eness/plan1.png";
+import plan2 from "../../assets/exhi/eness/plan2.png";
+
+import in1 from "../../assets/exhi/eness/in1.png";
+import in2 from "../../assets/exhi/eness/in2.png";
+import in3 from "../../assets/exhi/eness/in3.png";
+import in4 from "../../assets/exhi/eness/in4.png";
+import in5 from "../../assets/exhi/eness/in5.png";
+import in6 from "../../assets/exhi/eness/in6.png";
+import in7 from "../../assets/exhi/eness/in7.png";
+
+import DetailLayout from "../../layouts/DetailLayout.astro";
+---
+
+<DetailLayout
+  name="EXHIBIT"
+  title="ENESS project detail | Preawa's Portfolio"
+  link="/exhibition"
+>
+  <div class="flex flex-col gap-24 ml-20 mt-10">
+    <div class="flex flex-col gap-1">
+      <div class="flex flex-row gap-4">
+        <h2 class="font-normal text-start">01</h2>
+        <div class="flex flex-col">
+          <h2>ENES</h2>
+          <h2>IN CLASS</h2>
+          <h2>2022</h2>
+        </div>
+      </div>
+      <div class="text-[28px] font-light max-w-[1183px] ml-12">
+        An exhibition showcasing the artwork of the Twitter artist named Enes.
+      </div>
+    </div>
+    <div class="inline-flex flex-col justify-start gap-20">
+      <div class="flex flex-col justify-start gap-9">
+        <h2 class="font-bold">ANALYSIS</h2>
+        <div class="grid grid-cols-2 gap-2 max-w-[1196px]">
+          <Image
+            alt="Project planner"
+            src={anan1}
+            width={594}
+            height={334}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+          <Image
+            alt="Project planner"
+            src={anan2}
+            width={594}
+            height={334}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+          <Image
+            alt="Project planner"
+            src={anan3}
+            width={594}
+            height={334}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+          <Image
+            alt="Project planner"
+            src={anan4}
+            width={594}
+            height={334}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+          <Image
+            alt="Project planner"
+            src={anan5}
+            width={594}
+            height={334}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+          <Image
+            alt="Project planner"
+            src={anan6}
+            width={594}
+            height={334}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+        </div>
+      </div>
+      <div class="flex flex-col justify-start gap-9">
+        <h2 class="font-bold">MOOD & TONE</h2>
+        <div class="flex flex-col">
+          <Image
+            alt="Project planner"
+            src={mood}
+            width={594}
+            height={334}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+        </div>
+      </div>
+      <div class="flex flex-col justify-start gap-9">
+        <h2 class="font-bold">POSTER</h2>
+        <div class="flex flex-col">
+          <Image
+            alt="Project planner"
+            src={poster}
+            width={330}
+            height={410}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+        </div>
+      </div>
+
+      <div class="flex flex-col justify-start gap-9">
+        <h2 class="font-bold">PLAN</h2>
+        <div class="flex flex-row gap-2">
+          <Image
+            alt="Project planner"
+            src={plan1}
+            width={592}
+            height={333}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+          <Image
+            alt="Project planner"
+            src={plan2}
+            width={592}
+            height={333}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+        </div>
+      </div>
+
+      <div class="flex flex-col justify-start gap-9">
+        <h2 class="font-bold">INTERIOR</h2>
+        <div class="grid grid-cols-2 gap-2 max-w-[1192px]">
+          <Image
+            alt="Project planner"
+            src={in1}
+            width={592}
+            height={333}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+          <Image
+            alt="Project planner"
+            src={in2}
+            width={592}
+            height={333}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+          <Image
+            alt="Project planner"
+            src={in3}
+            width={592}
+            height={333}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+          <Image
+            alt="Project planner"
+            src={in4}
+            width={592}
+            height={333}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+          <Image
+            alt="Project planner"
+            src={in5}
+            width={592}
+            height={333}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+          <Image
+            alt="Project planner"
+            src={in6}
+            width={592}
+            height={333}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+          <Image
+            alt="Project planner"
+            src={in7}
+            width={592}
+            height={333}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</DetailLayout>

@@ -22,7 +22,7 @@ import Hamburger from "../icons/Hamburger.astro";
       <!-- Show on medium screens and above -->
       <hr class="w-52 h-[6px] mx-auto my-3 bg-yellow01 border-0 rounded-full" />
       <h3 class="font-normal">
-        <a onclick="toEdu()" class="cursor-pointer">EDUCATION</a>
+        <a onclick="toExp()" class="cursor-pointer">EDUCATION</a>
       </h3>
       <h3 class="font-normal">
         <a onclick="toExp()" class="cursor-pointer">CONTACT</a>
@@ -50,23 +50,10 @@ import Hamburger from "../icons/Hamburger.astro";
 </style>
 
 <script is:inline>
-  function toEdu() {
-    const element = document.getElementById("edu");
-    element.scrollIntoView();
-  }
-
-  function toAbout() {
-    const element = document.getElementById("about");
-    element.scrollIntoView();
-  }
 
   function toExp() {
     const element = document.getElementById("exp");
     element.scrollIntoView();
   }
 
-  function toggleMenu() {
-    const menu = document.querySelector(".hidden.md\\:flex");
-    menu.classList.toggle("flex");
-  }
 </script>

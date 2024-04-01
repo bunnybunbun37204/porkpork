@@ -1,0 +1,32 @@
+---
+
+import bath from "../assets/bathnbody.png";
+import eness from "../assets/enes.png";
+
+
+import Port from "../components/Port.astro";
+import WorkLayout from "../layouts/WorkLayout.astro";
+---
+
+<WorkLayout title="EXHIBITION | Kanyapat's Portfolio" name="EXHIBIT">
+  <div class="grid grid-cols-2 gap-3 ml-20">
+    <Port
+      project_number="01"
+      project_name="ENES"
+      project_department="IN CLASS"
+      project_year="2022"
+      image={eness}
+      link="/exhibition/eness"
+    />
+
+    <Port
+      project_number="02"
+      project_name="BATH&BODY WORK"
+      project_department="IN CLASS"
+      project_year="2023"
+      image={bath}
+      link="/exhibition/bathandbody"
+    />
+
+  </div>
+</WorkLayout>

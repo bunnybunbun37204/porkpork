@@ -1,0 +1,98 @@
+---
+import { Image } from "astro:assets";
+import anan1 from "../../assets/exhi/bath/ana.png";
+
+
+import plan1 from "../../assets/exhi/bath/plan1.png";
+import plan2 from "../../assets/exhi/bath/plan2.png";
+
+import in1 from "../../assets/exhi/bath/in1.png";
+import in2 from "../../assets/exhi/bath/in2.png";
+import in3 from "../../assets/exhi/bath/in3.png";
+
+import DetailLayout from "../../layouts/DetailLayout.astro";
+---
+
+<DetailLayout
+  name="EXHIBIT"
+  title="BATH and BODY project detail | Preawa's Portfolio"
+  link="/exhibition"
+>
+  <div class="flex flex-col gap-24 ml-20 mt-10">
+    <div class="flex flex-col gap-1">
+      <div class="flex flex-row gap-4">
+        <h2 class="font-normal text-start">02</h2>
+        <div class="flex flex-col">
+          <h2>BATH&BODY WORK</h2>
+          <h2>IN CLASS</h2>
+          <h2>2023</h2>
+        </div>
+      </div>
+      <div class="text-[28px] font-light max-w-[1183px] ml-12">
+        The exhibition promotes products from the brand Bath & Body Works, with sections divided according to the various scents available from this brand.      </div>
+    </div>
+    <div class="inline-flex flex-col justify-start gap-20">
+      <div class="flex flex-col justify-start gap-9">
+        <h2 class="font-bold">ANALYSIS</h2>
+        <div class="grid grid-cols-2 gap-2 max-w-[1196px]">
+          <Image
+            alt="Project planner"
+            src={anan1}
+            width={594}
+            height={334}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+        </div>
+      </div>
+
+
+      <div class="flex flex-col justify-start gap-9">
+        <h2 class="font-bold">PLAN</h2>
+        <div class="flex flex-row gap-2">
+          <Image
+            alt="Project planner"
+            src={plan1}
+            width={592}
+            height={333}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+          <Image
+            alt="Project planner"
+            src={plan2}
+            width={592}
+            height={333}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+        </div>
+      </div>
+
+      <div class="flex flex-col justify-start gap-9">
+        <h2 class="font-bold">INTERIOR</h2>
+        <div class="grid grid-cols-2 gap-2 max-w-[1192px]">
+          <Image
+            alt="Project planner"
+            src={in1}
+            width={592}
+            height={333}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+          <Image
+            alt="Project planner"
+            src={in2}
+            width={592}
+            height={333}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+          <Image
+            alt="Project planner"
+            src={in3}
+            width={592}
+            height={333}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</DetailLayout>
