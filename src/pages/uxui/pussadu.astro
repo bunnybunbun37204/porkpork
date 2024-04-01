@@ -1,0 +1,209 @@
+---
+import { Image } from "astro:assets";
+import DetailLayout from "../../layouts/DetailLayout.astro";
+
+import pain from "../../assets/uxui/pussadu/pain.png";
+import pain2 from "../../assets/uxui/pussadu/pain2.png";
+
+import journey1 from "../../assets/uxui/pussadu/journey1.png";
+import journey2 from "../../assets/uxui/pussadu/journey2.png";
+
+import flow from "../../assets/uxui/pussadu/flow.png";
+import design from "../../assets/uxui/pussadu/design.png";
+
+import pc1 from "../../assets/uxui/pussadu/pc1.png";
+import pc2 from "../../assets/uxui/pussadu/pc2.png";
+import pc3 from "../../assets/uxui/pussadu/pc3.png";
+
+import mobile1 from "../../assets/uxui/pussadu/mobile1.png";
+import mobile2 from "../../assets/uxui/pussadu/mobile2.png";
+import mobile3 from "../../assets/uxui/pussadu/mobile3.png";
+import mobile4 from "../../assets/uxui/pussadu/mobile4.png";
+---
+
+<DetailLayout
+  name="UXUI"
+  title="OTOP project detail | Preawa's Portfolio"
+  link="/uxui"
+>
+  <div class="flex flex-col gap-24 ml-20 mt-10">
+    <div class="flex flex-col gap-1">
+      <div class="flex flex-row gap-4">
+        <h2 class="font-normal text-start">02</h2>
+        <div class="flex flex-col">
+          <h2>pussadu</h2>
+          <h2>SCI PROJECT</h2>
+          <h2>2024</h2>
+        </div>
+      </div>
+      <div class="text-[28px] font-light max-w-[1183px] ml-12">
+        Project Pussadu for the Faculty of Science, Chulalongkorn University
+      </div>
+    </div>
+    <div class="inline-flex flex-col justify-start gap-20">
+      <div class="flex flex-col justify-start gap-9 max-w-[1132px]">
+        <h2 class="font-bold">CONCERN</h2>
+        <div class="max-w-[1132px]">
+          <span class="text-[28px] font-light"
+            >1. With a budget of only 50 baht, dev can't afford expensive
+            hosting for the database. As a result, each item must take a one
+            photo.<br /></span
+          ><span class="text-[28px] font-light"><br /></span><span
+            class="text-[28px] font-light"
+            >2. The procurement department, the project owner, requires that we
+            don't need to implement a chat system because they prefer to
+            communicate via LINE.<br /></span
+          ><span class="text-[28px] font-light"><br /></span><span
+            class="text-[28px] font-light"
+            >3. There are two types of borrowed items: 1. Supplies, which are
+            borrowed and do not need to be returned. Most of these are
+            single-use items, such as nails, paint, and pens (assume they are
+            borrowed and used up, so no need to return). These items will all
+            have the same ID, for example, 5 blue pens and 3 yellow pens will
+            all have the same ID (according to the procurement department's
+            policy). 2. Equipment, which must be returned after borrowing. It is
+            advisable to track which project has borrowed what, and each item
+            will have its own ID, for example, Computer-1, Computer-2.</span
+          >
+        </div>
+      </div>
+      <div class="flex flex-col gap-9">
+        <h2 class="font-bold">PAINT POINT & SOLUTION</h2>
+        <div class="flex flex-col justify-start gap-3">
+          <Image
+            alt="Project pain point"
+            src={pain}
+            width={1215}
+            height={683}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+          <Image
+            alt="Project pain point"
+            src={pain2}
+            width={1215}
+            height={683}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+        </div>
+      </div>
+      <div class="flex flex-col gap-9 justify-start">
+        <h2 class="font-bold">USER JOURNEY</h2>
+        <div class="flex flex-col justify-start gap-3">
+          <Image
+            alt="Project user journey"
+            src={journey1}
+            width={1215}
+            height={683}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+          <Image
+            alt="Project user journey"
+            src={journey2}
+            width={1215}
+            height={683}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+        </div>
+      </div>
+      <div class="flex flex-col justify-start gap-9">
+        <h2 class="font-bold">FLOW CHART</h2>
+        <div class="flex flex-col justify-start">
+          <Image
+            alt="Pussadu flow chart"
+            src={flow}
+            width={1308}
+            height={937}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+        </div>
+      </div>
+      <div class="flex flex-col justify-start gap-9">
+        <h2 class="font-bold">DESIGN SYSTEM</h2>
+        <div class="flex flex-col justify-start">
+          <Image
+            alt="Pussadu design system chart"
+            src={design}
+            width={1280}
+            height={735}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+        </div>
+      </div>
+
+      <div class="flex flex-col justify-start gap-9">
+        <h2 class="font-bold">PUSSADU WEB</h2>
+        <h2 class="font-bold">PC</h2>
+
+        <div class="flex flex-col justify-start gap-3">
+          <Image
+            alt="Pussadu pc web"
+            src={pc1}
+            width={981}
+            height={1360}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+          <Image
+            alt="Pussadu pc web"
+            src={pc2}
+            width={981}
+            height={921}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+          <Image
+            alt="Pussadu pc web"
+            src={pc3}
+            width={981}
+            height={638}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+        </div>
+        <h2 class="font-bold">MOBILE</h2>
+        <div class="grid grid-cols-2 max-w-[809px] gap-3">
+          <Image
+            alt="Pussadu mobile web"
+            src={mobile1}
+            width={362}
+            height={1480}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+          <Image
+            alt="Pussadu mobile web"
+            src={mobile2}
+            width={398}
+            height={1480}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+          <Image
+            alt="Pussadu mobile web"
+            src={mobile3}
+            width={362}
+            height={869}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+          <Image
+            alt="Pussadu mobile web"
+            src={mobile4}
+            width={370}
+            height={867}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+        </div>
+        <div class="flex flex-col justify-start gap-9">
+          <h2 class="font-bold">PROTOTYPE</h2>
+          <h2 class="font-bold">PC</h2>
+          <div class="text-[28px] font-light">
+            <a
+              href="https://www.figma.com/proto/jtf9gDH2d0haQsgv4j3pGm/%E0%B8%9E%E0%B8%B1%E0%B8%AA%E0%B8%94%E0%B8%B8-for-uxuui?page-id=1%3A2&type=design&node-id=30-12172&viewport=1750%2C1407%2C0.39&t=2EagTCe58INLPLOV-1&scaling=scale-down&starting-point-node-id=30%3A12172&show-proto-sidebar=1&mode=design"
+              >figma.com</a>
+          </div>
+        </div>
+        <h2 class="font-bold">MOBILE</h2>
+        <div class="text-[28px] font-light">
+          <a
+            href="https://www.figma.com/proto/jtf9gDH2d0haQsgv4j3pGm/%E0%B8%9E%E0%B8%B1%E0%B8%AA%E0%B8%94%E0%B8%B8-for-uxuui?page-id=1%3A2&type=design&node-id=1-23090&viewport=1750%2C1407%2C0.39&t=2EagTCe58INLPLOV-1&scaling=scale-down&starting-point-node-id=1%3A23038&show-proto-sidebar=1&mode=design"
+            >figma.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</DetailLayout>

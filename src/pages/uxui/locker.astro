@@ -1,28 +1,90 @@
 ---
+import { Image } from "astro:assets";
 import DetailLayout from "../../layouts/DetailLayout.astro";
+import pain from "../../assets/uxui/locker/pain.png";
+import design from "../../assets/uxui/locker/design.png";
+import web1 from "../../assets/uxui/locker/web1.png";
+import web2 from "../../assets/uxui/locker/web2.png";
+import web3 from "../../assets/uxui/locker/web3.png";
 ---
 
 <DetailLayout
   name="UXUI"
-  title="Locker project detail | Preawa's Portfolio"
+  title="LOCKERR project detail | Preawa's Portfolio"
   link="/uxui"
 >
-  <div class="flex flex-col gap-9 ml-20 mt-10">
+  <div class="flex flex-col gap-24 ml-20 mt-10">
     <div class="flex flex-col gap-1">
-        <div class="flex flex-row gap-4">
-            <h2 class="font-normal text-start">01</h2>
-            <div class="flex flex-col">
-              <h2>LOCKER</h2>
-              <h2>SCI PROJECT</h2>
-              <h2>2024</h2>
-            </div>
-          </div>
-          <div class="text-[28px] font-light max-w-[1183px] ml-12">
-            Project Locker for the Faculty of Science, Chulalongkorn University,
-            allows students to conveniently and systematically reserve locker space
-            through a web-based reservation system.
-          </div>
+      <div class="flex flex-row gap-4">
+        <h2 class="font-normal text-start">01</h2>
+        <div class="flex flex-col">
+          <h2>LOOCKER</h2>
+          <h2>SCI PROJECT</h2>
+          <h2>2024</h2>
+        </div>
+      </div>
+      <div class="text-[28px] font-light max-w-[1183px] ml-12">
+        Project Locker for the Faculty of Science, Chulalongkorn University,
+        allows students to conveniently and systematically reserve locker space
+        through a web-based reservation system.
+      </div>
     </div>
-
+    <div class="flex flex-col gap-9 justify-start">
+      <h2 class="font-bold">PAIN POINT & SOLUTION</h2>
+      <div class="flex flex-col">
+        <Image
+          alt="locker pain point design system"
+          src={pain}
+          width={1028}
+          height={578}
+          class="object-cover cursor-pointer shadow-lg"
+        />
+      </div>
+    </div>
+    <div class="flex flex-col gap-9 justify-start">
+      <h2 class="font-bold">DESIGN SYSTEM</h2>
+      <div class="inline-flex flex-col">
+        <Image
+          alt="locker website system"
+          src={design}
+          width={990}
+          height={692}
+          class="object-cover cursor-pointer justify-end shadow-lg"
+        />
+      </div>
+    </div>
+    <div class="flex flex-col gap-9 justify-start">
+      <h2 class="font-bold">LOCKER WEB</h2>
+      <div class="inline-flex flex-col gap-3">
+        <Image
+          alt="locker website"
+          src={web1}
+          width={920}
+          height={620}
+          class="object-cover cursor-pointer justify-end shadow-lg"
+        />
+        <Image
+          alt="locker website"
+          src={web1}
+          width={920}
+          height={620}
+          class="object-cover cursor-pointer justify-end shadow-lg"
+        />
+        <Image
+          alt="locker website"
+          src={web2}
+          width={960}
+          height={1357}
+          class="object-cover cursor-pointer justify-end shadow-lg"
+        />
+        <Image
+          alt="locker website"
+          src={web3}
+          width={960}
+          height={618}
+          class="object-cover cursor-pointer justify-end shadow-lg"
+        />
+      </div>
+    </div>
   </div>
 </DetailLayout>

@@ -1,0 +1,150 @@
+---
+import { Image } from "astro:assets";
+import DetailLayout from "../../layouts/DetailLayout.astro";
+import anal1 from "../../assets/uxui/OTOP/anal1.png";
+import anal2 from "../../assets/uxui/OTOP/anal2.png";
+import anal3 from "../../assets/uxui/OTOP/anal3.png";
+import anal4 from "../../assets/uxui/OTOP/anal4.png";
+import anal5 from "../../assets/uxui/OTOP/anal5.png";
+import anal6 from "../../assets/uxui/OTOP/anal6.png";
+
+import planner from "../../assets/uxui/OTOP/planner.png";
+import flow from "../../assets/uxui/OTOP/flow.png";
+
+import web1 from "../../assets/uxui/OTOP/web1.png";
+import web2 from "../../assets/uxui/OTOP/web2.png";
+import web3 from "../../assets/uxui/OTOP/web3.png";
+import web4 from "../../assets/uxui/OTOP/web4.png";
+---
+
+<DetailLayout
+  name="UXUI"
+  title="OTOP project detail | Preawa's Portfolio"
+  link="/uxui"
+>
+  <div class="flex flex-col gap-24 ml-20 mt-10">
+    <div class="flex flex-col gap-1">
+      <div class="flex flex-row gap-4">
+        <h2 class="font-normal text-start">04</h2>
+        <div class="flex flex-col">
+          <h2>OTOP WEB</h2>
+          <h2>IN CLASS</h2>
+          <h2>2024</h2>
+        </div>
+      </div>
+      <div class="text-[28px] font-light max-w-[1183px] ml-12">
+        Redesign Otop website
+      </div>
+    </div>
+    <div class="inline-flex flex-col justify-start gap-20">
+      <div class="flex flex-col justify-start gap-9">
+        <h2 class="font-bold">Analysis</h2>
+        <div class="grid grid-cols-2 gap-3">
+          <Image
+            alt="OTOP analysis"
+            src={anal1}
+            width={600}
+            height={337.394}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+          <Image
+            alt="OTOP analysis"
+            src={anal2}
+            width={600}
+            height={337.394}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+          <Image
+            alt="OTOP analysis"
+            src={anal3}
+            width={600}
+            height={337.394}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+          <Image
+            alt="OTOP analysis"
+            src={anal4}
+            width={600}
+            height={337.394}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+          <Image
+            alt="OTOP analysis"
+            src={anal5}
+            width={600}
+            height={337.394}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+          <Image
+            alt="OTOP analysis"
+            src={anal6}
+            width={600}
+            height={337.394}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+        </div>
+      </div>
+      <div class="flex flex-col gap-9">
+        <h2 class="font-bold">Project Planner</h2>
+        <Image
+          alt="Project planner"
+          src={planner}
+          width={1196}
+          height={628}
+          class="object-cover cursor-pointer shadow-lg"
+        />
+      </div>
+      <div class="flex flex-col gap-9 justify-start">
+        <h2 class="font-bold">FLOW CHART</h2>
+        <Image
+          alt="Project flow chart"
+          src={flow}
+          width={924}
+          height={811}
+          class="object-cover cursor-pointer shadow-lg"
+        />
+      </div>
+      <div class="flex flex-col justify-start gap-9">
+        <h2 class="font-bold">OTOP WEB</h2>
+        <div class="grid grid-cols-2 gap-2">
+          <Image
+            alt="OTOP web"
+            src={web1}
+            width={604}
+            height={1670}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+          <Image
+            alt="OTOP web"
+            src={web2}
+            width={712}
+            height={1670}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+          <Image
+            alt="OTOP web"
+            src={web3}
+            width={610}
+            height={914}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+          <Image
+            alt="OTOP web"
+            src={web4}
+            width={570}
+            height={914}
+            class="object-cover cursor-pointer shadow-lg"
+          />
+        </div>
+        <div class="flex flex-col gap-9 justify-start">
+          <h2 class="font-bold">PROTOTYPE</h2>
+          <div class="text-2xl underline">
+            <a
+              href="https://www.figma.com/proto/DhvIXlJLJIKDSQtkvtvPOy/otopA?page-id=0%3A1&type=design&node-id=47-4176&viewport=652%2C-312%2C0.03&t=2zfoXVsH1mVduJaI-1&scaling=scale-down&starting-point-node-id=47%3A4176&show-proto-sidebar=1&mode=design"
+              >figma.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DetailLayout>

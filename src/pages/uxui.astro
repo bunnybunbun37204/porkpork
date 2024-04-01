@@ -2,13 +2,15 @@
 import locker from "../assets/uxui/locker.png";
 import pussadu from "../assets/uxui/pussadu.png";
 import sgcu from "../assets/uxui/sgcu.png";
+import otop from "../assets/uxui/otop.png";
+
 
 import Port from "../components/Port.astro";
 import WorkLayout from "../layouts/WorkLayout.astro";
 ---
 
 <WorkLayout title="UX&UI | Kanyapat's Portfolio" name="UXUI">
-  <div class="grid grid-cols-2 gap-20 ml-10">
+  <div class="grid grid-cols-2 gap-3 ml-20">
     <Port
       project_number="01"
       project_name="LOCKER"
@@ -38,20 +40,12 @@ import WorkLayout from "../layouts/WorkLayout.astro";
 
     <Port
       project_number="04"
-      project_name="MUMU APP"
+      project_name="OTOP APP"
       project_department="IN CLASS"
       project_year="2024"
-      image={sgcu}
-      link="/uxui/sgcu"
+      image={otop}
+      link="/uxui/otop"
     />
 
-    <Port
-      project_number="05"
-      project_name="OTOP WEB"
-      project_department="IN CLASS"
-      project_year="2024"
-      image={sgcu}
-      link="/uxui/sgcu"
-    />
   </div>
 </WorkLayout>
