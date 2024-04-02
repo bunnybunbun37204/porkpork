@@ -7,17 +7,19 @@ import { fname, lname, skills } from "../datas/data";
 
 <div class="flex flex-row mt-[107px] justify-between flex-wrap">
   <div class="flex flex-col">
-    <h1 class="font-semibold">{fname}</h1>
-    <h1 class="font-semibold">{lname}</h1>
+    <div class="font-semibold text-6xl sm:text-[86px]">{fname}</div>
+    <div class="font-semibold text-6xl sm:text-[86px]">{lname}</div>
   </div>
   <div class="flex flex-row gap-4 mt-16 flex-wrap-reverse">
-    <Image
+    <div class="flex w-full justify-center items-start md:w-auto">
+      <Image
       width={204}
       height={248}
-      class="object-none max-h-[248px] mt-[145px]"
+      class="object-none max-h-[248px] md:mt-[145px]"
       src={pork1}
       alt="kanyapat-saetiew2"
     />
+    </div>
     <div class="flex flex-row gap-3">
       <div class="flex flex-col min-w-[208px] gap-2">
         <h4 class="text-end font-medium">Skills</h4>
@@ -34,7 +36,7 @@ import { fname, lname, skills } from "../datas/data";
           skills.map((skill) => (
             <div class="flex flex-row">
               <li class="text-xl font-light" />
-              <h4 class="font-light">{skill}</h4>
+              <div class="font-light text-sm md:text-2xl">{skill}</div>
             </div>
           ))
         }

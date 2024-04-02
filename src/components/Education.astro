@@ -4,22 +4,22 @@ import IconGroup from "./IconGroup.astro";
 ---
 
 <div class="flex flex-col">
-  <div class="text-6xl font-normal">EDUCATION</div>
+  <div class="text-3xl md:text-6xl font-normal">EDUCATION</div>
   {
     educations.map((element) => (
       <div>
-        <h3 class="font-normal mt-2">
+        <div class="font-normal mt-2 md:text-4xl">
           <Fragment set:html={element.schoolName} />
-        </h3>
-        <h4 class="font-light">
+        </div>
+        <div class="font-light text-lg md:text-xl">
           <Fragment set:html={element.location} />
-        </h4>
-        <h4 class="font-light">
+        </div>
+        <div class="font-light text-lg md:text-xl">
           <Fragment set:html={element.department} />
-        </h4>
-        <h4 class="font-light">
+        </div>
+        <div class="font-light text-lg md:text-xl">
           <Fragment set:html={element.peroid} />
-        </h4>
+        </div>
         <div class="mt-5" />
       </div>
     ))
