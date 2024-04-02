@@ -10,13 +10,14 @@ const { title, name } = Astro.props;
 ---
 
 <Layout title={title}>
+
     <div class="flex flex-col gap-7 mt-10 mb-10 mr-5">
       <div class="flex flex-row justify-between">
         <div class="flex justify-start">
           <div
-            class="bg-yellow01 w-[150px] h-[78px] inline-flex items-center gap-2.5 overflow-hidden transition-[width] duration-[0.3s] ease-[ease] px-5 py-2.5 rounded-tr-3xl rounded-br-3xl hover:w-[200px] justify-end cursor-pointer"
+            class="bg-yellow01 w-[64px] md:w-[126px] h-[54px] md:h-auto inline-flex items-center gap-2.5 overflow-hidden transition-[width] duration-[0.3s] ease-[ease] px-5 py-2.5 rounded-tr-3xl rounded-br-3xl hover:w-[120px] md:hover:w-[200px] justify-end cursor-pointer"
           >
-            <div class="text-5xl">{name}</div>
+          <div class="text-lg md:text-5xl">{name}</div>
           </div>
         </div>
         <div class="flex flex-col text-end">
